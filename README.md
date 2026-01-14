@@ -199,7 +199,7 @@ Este projeto foi desenvolvido para fins educacionais e de portfólio pessoal.
 
 ## 👤 Autor
 
-**João** - Desenvolvedor Full-stack
+**Guilherme** - Desenvolvedor Full-stack
 
 ---
 

@@ -1,0 +1,146 @@
+.education {
+  background-color: var(--color-bg-light);
+  padding: 4rem 2rem;
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-title {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin-bottom: 2rem;
+}
+
+.certifications-title {
+  margin-top: 3rem;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.education-item {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-institution {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.education-degree {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.education-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  flex-wrap: wrap;
+}
+
+.education-location::before {
+  content: '📍 ';
+}
+
+.education-period {
+  font-weight: 500;
+}
+
+.education-period.ongoing {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-item {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.certification-badge {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.certification-content {
+  flex: 1;
+}
+
+.certification-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.certification-issuer {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .education {
+    padding: 3rem 1.5rem;
+  }
+
+  .certifications-list {
+    grid-template-columns: 1fr;
+  }
+
+  .education-institution {
+    font-size: 1.25rem;
+  }
+
+  .education-degree {
+    font-size: 1rem;
+  }
+}
